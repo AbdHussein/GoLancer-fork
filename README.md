@@ -1,4 +1,2 @@
 # GoLancer
-GoLancer's Website repository
-
-Check Karam Access
+GoLancer's new theme website
