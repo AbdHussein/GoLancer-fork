@@ -1,0 +1,138 @@
+/* 
+Top part of landing page
+*/
+
+body {
+  margin: 0;
+}
+
+.topLanding {
+  height: 100vh;
+  width: 100vw;
+  background: #fbfbfd;
+}
+
+.logo {
+  width: 150px;
+}
+
+.navButtons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+}
+
+.callToAction {
+  padding: 5px;
+  color: white;
+  background: #c54436;
+}
+
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 50vw;
+  padding-top: 50px;
+}
+
+.nav-and-text {
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+
+.stripe-img {
+  position: relative;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.nav-and-stripe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.large-heading {
+  font-family: "Almarai";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  color: #0b0c5c;
+}
+
+#fitst-main-heading {
+  text-align: right;
+  margin-right: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 60vh;
+}
+
+#heading-description {
+  text-align: right;
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 33.6584px;
+  line-height: 63px;
+  text-align: right;
+  color: #0b0c5c;
+}
+
+#karam {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 350px;
+  top: 450px;
+  z-index: 1;
+}
+
+#amer {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 60px;
+  top: 200px;
+  z-index: 1;
+}
+
+.active-green-tag {
+  font-family: "Almarai";
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  width: 120px;
+  height: 20px;
+  background: #3f7f68;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  font-family: "Cairo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  top: 66vh;
+  left: 17vw;
+  z-index: 2;
+}
+
+.green-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #c0f9ac;
+}
