@@ -1,71 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="./assets/images/icon.png" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="about-us.css" />
     <script defer src="index.js"></script>
     <title>GoLancer</title>
   </head>
   <body>
     <header>
       <div class="about-us-container">
-        <nav>
-          <img class="logo" src="./assets/images/logo.png" alt="Logo image" />
-          <div class="nav-btns">
-            <p><a class="link" href="about-us.html">من نحن</a></p>
-            <p class="call-to-action">كن أول المستخدمين</p>
+        <nav class="navbar navbar-expand-lg navbar-light flex-column">
+          <div class="container-fluid">
+            <a class="navbar-brand"
+              ><img
+                class="logo"
+                src="./assets/images/logo.png"
+                alt="Logo image"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarText"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >من نحن</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">الرئيسية</a>
+                </li>
+              </ul>
+              <p class="call-to-action">كن أول المستخدمين</p>
+            </div>
           </div>
-          <div class="about-us-heading">
-            <h1 class="large-heading">
-              نساعدك لتستثمر
-              بمهاراتك التقنية
-            </h1>
-            <p class="heading-description">
-              قو لانسر هي الوجهة الشخصية الوحيدة لبناء حياتك المهنية
-              التي تتيح لك تعلم المهارات وكسب المال في نفس الوقت
-            </p>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
+    <section class="heading">
+      <div class="about-us-container">
+        <div class="about-us-heading">
+          <h1 class="large-heading">نساعدك لتستثمر بمهاراتك التقنية</h1>
+          <p class="heading-description">
+            قو لانسر هي الوجهة الشخصية الوحيدة لبناء حياتك المهنية التي تتيح لك
+            تعلم المهارات وكسب المال في نفس الوقت
+          </p>
+        </div>
+      </div>
+    </section>
     <section class="bg-light-brown">
       <div class="about-us-container">
         <div class="about-us-wrapper">
-          <img class="about-us-img-1" src="./assets/images/about-us-img-1.png" alt="image" />
+          <img
+            class="about-us-img-1"
+            src="./assets/images/about-us-img-1.png"
+            alt="image"
+          />
           <div class="about-us-subheading">
             <h2>من نحن</h2>
-            <p>منصة تدريبية عربية تعمل على توفير مسارات تقنية واضح للراغبين في تعلم أحد المسارات البرمجية و المتابعة مع الطلاب لتمكنهم من سوق العمل الحر</p>
+            <p>
+              منصة تدريبية عربية تعمل على توفير مسارات تقنية واضح للراغبين في
+              تعلم أحد المسارات البرمجية و المتابعة مع الطلاب لتمكنهم من سوق
+              العمل الحر
+            </p>
           </div>
         </div>
       </div>
     </section>
-    <section class="bg-primary flex-row-reverse">
-      <div class="why-golancer">
-        <h3>لماذا قولانسر</h3>
-        <ul>
-         <li>نظام التعليم الثنائي</li>
-         <li>وجود استشارات طوال فترة التدريب</li>
-         <li>اختبارات لتحديد قدرات الطلاب</li>
-         <li>نظام تدريبي مختلف عن الأنظمة التقليدية</li>
-         <li>امكانية التحكم في وقتك و وقت تدريباتك على المنصة</li>
-         <li>مسارات برمجية مختلقة</li>
-         <li>توفير فرص عمل حقيقية على منصات العمل الحر و بناء صفحات احترافية على المنصات</li>
-        </ul>
+    <section class="bg-primary">
+      <div class="why-golancer-wrapper">
+        <div class="why-golancer">
+          <h3>لماذا قولانسر</h3>
+          <ul>
+            <li>نظام التعليم الثنائي</li>
+            <li>وجود استشارات طوال فترة التدريب</li>
+            <li>اختبارات لتحديد قدرات الطلاب</li>
+            <li>نظام تدريبي مختلف عن الأنظمة التقليدية</li>
+            <li>امكانية التحكم في وقتك و وقت تدريباتك على المنصة</li>
+            <li>مسارات برمجية مختلقة</li>
+            <li>
+              توفير فرص عمل حقيقية على منصات العمل الحر و بناء صفحات احترافية
+              على المنصات
+            </li>
+          </ul>
+        </div>
+        <img src="./assets/images/about-us-img-2.png" alt="image" />
       </div>
-      <img class="w-50" src="./assets/images/about-us-img-2.png" alt="image">
     </section>
     <section class="bg-clear">
       <div class="partnerships">
         <h3>نعمل سوياً</h3>
         <div class="images">
-          <img src="./assets/images/AUF.png" alt="AUF">
-          <img src="./assets/images/GSG.png" alt="GSG">
-          <img src="./assets/images/UCASTI.png" alt="UCASTI">
+          <img src="./assets/images/AUF.png" alt="AUF" />
+          <img src="./assets/images/GSG.png" alt="GSG" />
+          <img src="./assets/images/UCASTI.png" alt="UCASTI" />
         </div>
       </div>
     </section>
@@ -91,7 +151,10 @@
               <li>&middot; أحلامك</li>
               <li>&middot; مهاراتك</li>
               <li>&middot; طريقك</li>
-              <li>نحن نبني المسار الأكثر تخصيصًا للعثور على عمل مُرضٍ حتى تتمكن من إنشاء مستقبل أفضل لك وللعالم من حولك</li>
+              <li>
+                نحن نبني المسار الأكثر تخصيصًا للعثور على عمل مُرضٍ حتى تتمكن من
+                إنشاء مستقبل أفضل لك وللعالم من حولك
+              </li>
             </ul>
             <div class="subscribe">
               <input type="email" placeholder="أدخل بريدك الإلكتروني" />
@@ -101,6 +164,9 @@
         </div>
       </div>
     </footer>
-    <div class="copyrights bg-gray">جميع الحقوق محفوظة لدى منصة قولانسر &copy; <div id="year"></div></div>
+    <div class="footer-banner copyrights bg-gray">
+      جميع الحقوق محفوظة لدى منصة قولانسر &copy;
+      <div id="year"></div>
+    </div>
   </body>
 </html>
