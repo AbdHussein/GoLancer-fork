@@ -18,7 +18,8 @@ body {
 }
 
 header{
-  top: 100px;
+  margin-inline: 15rem;
+  margin-top: 5rem;
 }
 
 .about-us-container{
@@ -35,10 +36,18 @@ header > .about-us-container > nav {
   background-color: var(--background-color);
 }
 
-header > .about-us-container > nav > .nav-btns p{
-  font-size: 24px !important;
+header .navbar {
+  float: left;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
 }
 
+header .navbar .navbar-brand {float:none;}
+
+header > nav > .nav-btns p {
+  font-size: 20px;
+}
 header > .about-us-container > nav > .about-us-heading{
   display: flex;
   flex-direction: column;
@@ -62,6 +71,116 @@ header > .about-us-container > nav > .about-us-heading > .heading-description{
   font-size: 36px;
   text-align: end;
   font-family: inherit;
+}
+
+.roadmap{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.roadmap .road{
+  position: relative;
+  left: 0px;
+  top: -270px;
+  width: 900px;
+}
+
+.roadmap .member{
+  display: flex;
+}
+
+.roadmap .member > img{
+  width: 220px;
+  object-fit: contain;
+}
+
+.roadmap .member > .description{
+  color: var(--primary-color);
+  display: flex;
+  text-align: center;
+  justify-content: start;
+  font-size: 24px;
+  text-shadow: 0px 2px 4px lightslategray;
+}
+
+.roadmap .member.old{
+  position: absolute;
+  left: 100.24px;
+  top: 290.45px;
+  flex-direction: column;
+}
+
+.roadmap .member.new{
+  position: absolute;
+  left: 460.82px;
+  top: 630.71px;
+}
+
+.roadmap .member.new > .description{
+  position: absolute;
+  left: -180px;
+  bottom: 0px;
+}
+
+.roadmap .member.new::before{
+  content: 'مستخدم جديد';
+  position: absolute;
+  left: -50px;
+  top: 20px;
+  height: 30.756954193115234px;
+  width: 130.4428253173828px;
+  border-radius: 25.54083824157715px;
+  background-color: var(--dark-green);
+  text-align: end;
+  padding-top: 2px;
+  padding-inline-end: 10px;
+  color: var(--light-brown);
+}
+
+.roadmap .member.new::after{
+  content: '';
+  position: absolute;
+  left: -45px;
+  top: 25px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: var(--light-green);
+  text-align: start;
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2rem;
+  min-height: 770px;
+  margin-inline: auto;
+  width: 75%;
+}
+
+.hero > h1{
+  margin-top: 3em;
+  text-align: end;
+  color: var(--primary-color);
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.hero > p{
+  margin-top: 1em;
+  color: var(--primary-color);
+  font-size: 2em;
+  width: 60%;
+}
+
+.hero > .call-to-action{
+  margin-top: 2rem;
+  font-size: 1.5rem !important;
+  width: 35%;
+  border: none;
+  border-radius: 15px;
 }
 
 .about-us-container .about-us-wrapper{
@@ -190,7 +309,7 @@ header > .about-us-container > nav > .about-us-heading > .heading-description{
 }
 
 .logo {
-  width: 350px;
+  width: 250px;
 }
 
 .nav-btns {
@@ -203,10 +322,14 @@ header > .about-us-container > nav > .about-us-heading > .heading-description{
 }
 
 .call-to-action {
-  padding: 5px;
+  padding: 8px;
   color: var(--background-color);
   background: var(--secondary-color);
   cursor: pointer;
+  font-size: 18px !important;
+  border-radius: 3px;
+  margin: 0;
+  width: fit-content;
 }
 
 nav {
@@ -321,6 +444,472 @@ nav {
   color: var(--primary-color);
 }
 
+.how-golancer-works{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light-brown);
+}
+
+.how-golancer-works > .title{
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-block: 2rem;
+  font-weight: 700;
+}
+
+.how-golancer-works > .details{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.how-golancer-works > .details > .start{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.how-golancer-works > .details > .start > .title{
+  color: var(--secondary-color);
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-inline-start: 370px;
+}
+
+.how-golancer-works > .details > .start > .details{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: end;
+  gap: 2rem;
+}
+
+.how-golancer-works > .details > .start > .details > .formula{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: auto;
+}
+
+.how-golancer-works > .details > .start > .details > .formula > span{
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.how-golancer-works > .details > .start > .details > .image{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.how-golancer-works > .details > .start > .details > .image > .user-image{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.how-golancer-works > .details > .start > .details > .image::before{
+  content: 'مستخدم جديد';
+  position: absolute;
+  left: 0px;
+  top: 110px;
+  z-index: 2;
+  height: 30.756954193115234px;
+  width: 130.4428253173828px;
+  border-radius: 25.54083824157715px;
+  background-color: var(--dark-green);
+  text-align: end;
+  padding-top: 2px;
+  padding-inline-end: 10px;
+  color: var(--light-brown);
+}
+
+.how-golancer-works > .details > .start > .details > .image::after{
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 115px;
+  z-index: 3;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: var(--light-green);
+  text-align: start;
+}
+
+.how-golancer-works > .details > .start > .details > .image > .name{
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-golancer-works > .details > .start > .details > .image > img{
+  width: 400px;
+}
+
+.how-golancer-works > .details > .start > .details > .description{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 33.3%;
+  margin-block: auto;
+}
+
+.how-golancer-works > .details > .start > .details > .description > h3{
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.how-golancer-works > .details > .start > .details > .description > h4{
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.how-golancer-works > .details > .start > .details > .description > p{
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.how-golancer-works > .details > .learn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.how-golancer-works > .details > .learn > .line{
+
+}
+
+.how-golancer-works > .details > .learn > .details{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  gap: 3rem;
+}
+
+.how-golancer-works > .details > .learn > .details > .image >img{
+  width: 500px;
+}
+
+.how-golancer-works > .details > .learn > .details > .text{
+  text-align: end;
+}
+
+.how-golancer-works > .details > .learn > .details > .text > h3{
+    font-size: 30px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.how-golancer-works > .details > .learn > .details > .text > h4{
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.how-golancer-works > .details > .learn > .details > .text > p{
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.how-golancer-works > .details > .earn-money {
+  margin-bottom: 5rem;
+}
+
+.how-golancer-works > .details > .earn-money > .details{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  width: 70%;
+  gap: 5rem;
+}
+
+.how-golancer-works > .details > .earn-money > .details > .image{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  width: 70%;
+}
+
+.how-golancer-works > .details > .earn-money > .details > .image > .money1{
+  position: absolute;
+  top: 30px;
+  right: 100px;
+}
+
+.how-golancer-works > .details > .earn-money > .details > .image > .money2{
+  position: absolute;
+  bottom: 50px;
+  left: 80px;
+}
+
+.how-golancer-works > .details > .earn-money > .details > .image > .info{
+  position: absolute;
+  bottom: 40px;
+  left: 38%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  gap: 1rem;
+}
+
+.how-golancer-works > .details > .earn-money > .details > .image > .info > .value{
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  width: fit-content;
+  text-align: center;
+  font-size: 2rem;
+  padding-inline: 1em;
+  border-radius: 25px;
+}
+
+.how-golancer-works > .details > .earn-money > .details > .image > .info > .progress{
+  color:black;
+  width: fit-content;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: transparent;
+  height: max-content;
+}
+
+.how-golancer-works > .details > .earn-money > .details > .text{
+  text-align: end;
+}
+
+.how-golancer-works > .details > .earn-money > .details > .text > h3{
+  font-size: 30px;
+font-weight: 700;
+color: var(--secondary-color);
+margin-bottom: 20px;
+}
+
+.how-golancer-works > .details > .earn-money > .details > .text > h4{
+font-size: 26px;
+font-weight: 500;
+color: var(--primary-color);
+margin-bottom: 20px;
+}
+
+.how-golancer-works > .details > .earn-money > .details > .text > p{
+font-size: 18px;
+font-weight: 400;
+color: var(--primary-color);
+margin-bottom: 20px;
+}
+
+.earnings{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+.earnings > .details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  gap: 2em;
+  margin-inline: 15rem;
+  flex: 1;
+}
+
+.earnings > .details > h2{
+  font-size: 40px;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.earnings > .details > p{
+  font-size: 28px;
+  color: var(--primary-color);
+  font-weight: 400;
+}
+
+.earnings > .animations{
+  position: relative;
+  width: 768.39px;
+  height: 586px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex: 1;
+  margin-inline: 2rem;
+}
+
+.earnings > .animations > svg{
+  position: absolute;
+  margin-top: auto;
+}
+
+.earnings > .animations > svg > path{
+  width: 100%;
+  height: 100%;
+}
+
+.earnings > .animations > .circle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  border: 12px solid var(--light-brown);
+  z-index: 2;
+  align-self: center;
+  margin-top: 40px;
+}
+
+.earnings > .animations > .circle > .content > h3{
+  color: var(--background-color);
+  font-weight: 400;
+}
+
+.earnings > .animations > .circle > .content > span{
+  color: var(--background-color);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.earnings > .animations > .circle > .metrics{
+  position: absolute;
+  bottom: -20px;
+  width: 200px;
+  height: 60px;
+  background-color: var(--light-brown);
+  border: 1px solid var(--secondary-color);
+  border-radius: 25px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color);
+}
+
+.earnings > .animations > .circle > .metrics{
+  position: absolute;
+  bottom: -20px;
+  width: 200px;
+  height: 60px;
+  background-color: var(--light-brown);
+  border: 1px solid var(--secondary-color);
+  border-radius: 25px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color);
+}
+
+.goals{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light-brown);
+}
+
+.goals > .details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2em;
+  margin-inline: 10rem;
+  flex: 1;
+}
+
+.goals > .details > h2{
+  text-align: end;
+  font-size: 40px;
+  width: 100%;
+}
+
+.goals > .details > .list{
+  list-style: none;
+}
+
+.goals > .details > .list > li{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3em;
+  margin-top: 2em;
+}
+
+.goals > .details > .list > li:first-child {
+  margin-top: 0;
+}
+
+.goals > .details > .list > li:last-child {
+  gap: 2em;
+}
+
+.goals > .details > .list > li > .text > .title{
+  text-align: end;
+  color: rgba(0, 0, 0, 0.66);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.goals > .details > .list > li > .text > .description{
+  text-align: end;
+  color: rgba(0, 0, 0, 0.66);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.goals > .details > .list > li > .icon{
+ width: 80px;
+}
+
+.goals > img{
+  width: 677px;
+  margin: 2rem;
+}
+
 footer{
   display: flex;
   flex-direction: column;
@@ -431,6 +1020,13 @@ footer{
   text-align: center;
   padding: 1rem;
 }
+
 #year{
   display: inline;
+}
+
+@media (max-width: 1110px) {
+  .roadmap{
+    display: none;
+  }
 }
