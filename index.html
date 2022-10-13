@@ -7,48 +7,454 @@
       href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400&display=swap"
       rel="stylesheet"
     />
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="./assets/images/icon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <script defer src="index.js"></script>
     <title>GoLancer</title>
   </head>
   <body>
-    <div class="top-landing">
-      <img id="amer" src="./assets/images/amer.png" alt="" />
-      <img id="karam" src="./assets/images/karam.png" alt="" />
-      <div class="nav-and-stripe">
-        <img class="stripe-img" src="./assets/images/stripe.png" />
-        <div class="nav-and-text">
-          <nav>
-            <img class="logo" src="./assets/images/logo.png" alt="Logo image" />
-            <div class="nav-btns">
-              <p><a class="link" href="about-us.html">من نحن</a></p>
-              <p class="call-to-action">كن أول المستخدمين</p>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand w-auto text-end m-0"
+            ><img class="logo" src="./assets/images/logo.png" alt="Logo image"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end w-auto"
+            id="navbarText"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0 text-end">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/index.html"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/about-us.html"
+                  >من نحن</a
+                >
+              </li>
+              <li class="nav-item">
+                <p class="call-to-action float-right">كن أول المستخدمين</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="roadmap">
+      <svg
+        width="1413"
+        height="1479"
+        viewBox="0 0 1413 1479"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="road"
+      >
+        <path
+          d="M250.058 209.968L41.9551 224.218"
+          stroke="#FFD542"
+          stroke-width="7.7611"
+        />
+        <path
+          d="M288.882 481.523L139.793 631.156"
+          stroke="#FFD542"
+          stroke-width="7.7611"
+        />
+        <path
+          d="M557.551 522.691L531.15 737.244"
+          stroke="#FFD542"
+          stroke-width="7.7611"
+        />
+        <path
+          d="M901.544 694.492L745.467 834.624"
+          stroke="#FFD542"
+          stroke-width="7.7611"
+        />
+        <path
+          d="M1007.15 1103.01L797.492 1087.18"
+          stroke="#FFD542"
+          stroke-width="7.7611"
+        />
+        <path
+          d="M1059.18 1345.28L865.826 1439.49"
+          stroke="#FFD542"
+          stroke-width="7.7611"
+        />
+        <path
+          d="M-17.5 16.5C-17.5 20.4585 29.5305 178.484 29.5305 293.096C29.5305 530.515 125.817 622.446 142.9 650.156C207.816 755.453 388.275 778.275 453.501 760.203C596.378 720.618 650.554 756.414 684.899 779.204C733.819 811.664 779.673 895.273 788.174 962.88C807.587 1117.26 763.326 1177.43 785.845 1271.65C793.61 1299.36 824.67 1416.53 878.249 1462.45"
+          stroke="#30307E"
+          stroke-width="15.5222"
+        />
+        <path
+          d="M131.254 217.093C131.254 277.263 109.977 441.779 214.339 555.152C318.702 668.524 475.762 649.893 541.247 626.405C600.779 620.072 741.119 638.281 826.224 761.787C911.329 885.293 911.381 1034.93 900.768 1094.3C886.532 1143.13 882.132 1274.02 978.419 1407.03"
+          stroke="#618C69"
+          stroke-width="7.7611"
+          stroke-dasharray="13.97 13.97"
+        />
+        <path
+          d="M212.5 -4C253.655 91.0048 237.794 294.351 252.386 365.934C293.54 567.819 399.145 534.567 538.915 516.358C755.353 488.16 949.306 675.971 1000.16 877.376C1020.35 957.339 1021.9 1046.8 1006.37 1229.69C1029.58 1312.48 1076.62 1390.84 1218.36 1429.99C1260.65 1441.67 1333.63 1478.22 1412.05 1469.51"
+          stroke="#30307E"
+          stroke-width="15.5222"
+          stroke-linejoin="round"
+        />
+      </svg>
+      <div class="old member">
+        <img src="./assets/images/amer.png" />
+        <div class="description">
+          عامر <br />
+          مصمم جرافيك
+        </div>
+      </div>
+      <div class="new member">
+        <img src="./assets/images/karam.png" />
+        <div class="description">كرم <br />مصمم صفحات ويب</div>
+      </div>
+    </section>
+    <section class="hero">
+      <h1>نساعدك لتستثمر بمهاراتك التقنية</h1>
+      <p>
+        قو لانسر هي الوجهة الشخصية الوحيدة لبناء حياتك المهنية التي تتيح لك تعلم
+        المهارات وكسب المال في نفس الوقت
+      </p>
+      <button class="call-to-action">كن مِن أوائل المستخدمين</button>
+    </section>
+    <section class="how-golancer-works">
+      <div class="title">كيف تعمل قولانسر</div>
+      <div class="details">
+        <div class="start">
+          <div class="title">البداية</div>
+          <div class="details">
+            <div class="formula">
+              <span>شغفك</span><span>+</span><span>اهتماماتك</span><span>+</span
+              ><span>أهدافك</span><span>=</span><span>مسارك المخصص</span>
             </div>
-          </nav>
-          <div id="fitst-main-heading">
-            <h1 class="large-heading">
-              نساعدك لتستثمر
-              <br />
-              بمهاراتك التقنية
-            </h1>
-            <br />
-            <p id="heading-description">
-              قو لانسر هي الوجهة الشخصية الوحيدة لبناء حياتك المهنية
-              <br />
-              التي تتيح لك تعلم المهارات وكسب المال في نفس الوقت
-            </p>
+            <div class="image">
+              <img
+                class="user-image"
+                src="./assets/images/how-golancer-works1.png"
+                alt="user1"
+              />
+              <div class="name">
+                <span>خالد </span>
+                <span>مطور تطبيقات ويب</span>
+              </div>
+            </div>
+            <div class="description">
+              <h3>إكتشف</h3>
+              <h4>حدد مسارك الخاص</h4>
+              <p>
+                أنت لست مثل أي شخص آخر، فلماذا نظام التعليم يكون موحد للجميع دون
+                مراعاة فرق المستويات ؟
+              </p>
+              <p>
+                اختبار قياس المهارات نستخدم الذكاء الاصطناعي لقياس اهتماماتك
+                وقدراتك وخبراتك لكي نستطيع تزويدك بمسار مهني يتناسب مع مهاراتك و
+                يربطك بوظائف في سوق العمل المتطورة باستمرار
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="learn">
+          <div class="line"></div>
+          <div class="details">
+            <div class="image">
+              <img
+                class="user-image"
+                src="./assets/images/how-golancer-works2.png"
+                alt="user2"
+              />
+            </div>
+            <div class="text">
+              <h3>التعلم</h3>
+              <h4>انطلق في رحلة لبناء مهاراتك</h4>
+              <p>
+                نقدم مسارات تدريبية كاملة معدة من قبل خبراء في التطوير الوظيفي
+                لبناء مهاراتك و جعلها تتناسب مع المهن الأسرع نموًا اليوم
+              </p>
+              <p>
+                أنهِ الدورات التدريبية للحصول جلسات استشارية فردية ، وقتما تشاء
+                ، وأينما كنت ، وشق طريقك في لوحة المتصدرين و جمع أكبر قدر ممكن
+                من النقاط و ابنِ مجتمع التعلم الخاص بك - وافعل كل ذلك دون الحاجة
+                الى مبالغ مالية ضخمة
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="earn-money">
+          <div class="line"></div>
+          <div class="details">
+            <div class="image">
+              <img
+                class="money1"
+                src="./assets/images/money.png"
+                alt="money"
+              />
+                <img
+                class="user-image"
+                src="./assets/images/how-golancer-works3.png"
+                alt="user3"
+              />
+              <div class="info">
+                <span class="value">$550</span>
+                <span class="progress">أكتمال العمل</span>
+              </div>
+              <img
+                class="money2"
+                src="./assets/images/money.png"
+                alt="money"
+              />
+            </div>
+            <div class="text">
+              <h3>أكسب المال</h3>
+              <h4>أكسب المال بعد التعلم</h4>
+              <p>
+                استخدم مهاراتك الجديدة في سوق العمل لكسب المال - كل ذلك مع الاستمرار في التعلم وتطوير قدراتك
+              </p>
+              <p>
+                في اللحظة التي تكمل فيها مسارك التدريبي ، نقوم تلقائيًا بتحديث ملفك الشخصي بمهاراتك الجديدة  و نتابع معك خطوة بخطوة حتى تتمكن من الحصول على أول عمل لك من منصات العمل الحر  و تتمكن من الغوص مباشرة في العمل الذي يثيرك. ستعرف دائمًا قيمة عملك - وسيعرف أصحاب العمل أن لديك المهارات اللازمة للنجاح
+              </p>
+            </div>
+          </div>
           </div>
         </div>
       </div>
-      <div class="active-green-tag">
-        <div class="green-circle"></div>
-        <p style="display: inline">مستخدم جديد</p>
+    </section>
+    <section class="earnings">
+      <div class="details">
+        <h2>ارفع مستواك و كون فريق عمل</h2>
+        <p>
+          كلما استمتعت بالتعلم ، زادت سرعة وصولك إلى المكان الذي تريد الذهاب
+          إليه
+        </p>
+        <p>
+          اعمل في طريقك إلى أعلى لوحات المتصدرين ، واجمع الشارات ، واكسب نقاط
+          الخبرة ، وتتبع تقدمك على لوحة معلومات مخصصة
+        </p>
       </div>
+      <div class="animations">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 799 593"
+          fill="none"
+        >
+          <path
+            d="M155.9 389.769L153.177 393.352C153.663 393.722 154.221 393.989 154.814 394.136L155.9 389.769ZM155.9 211.113L152.733 214.309L155.9 211.113ZM384.49 221.432L380.434 223.38C381.197 224.969 382.816 225.966 384.577 225.932C386.339 225.897 387.919 224.839 388.619 223.222L384.49 221.432ZM565.614 135.006L561.991 137.675C563.189 139.301 565.322 139.93 567.21 139.213C569.098 138.497 570.278 136.611 570.096 134.601L565.614 135.006ZM721.13 211.113L718.06 207.823L721.13 211.113ZM776.781 59.0888C775.461 56.9833 772.684 56.3469 770.578 57.6673L736.267 79.1849C734.162 80.5053 733.525 83.2826 734.846 85.3881C736.166 87.4936 738.944 88.13 741.049 86.8096L771.548 67.6828L790.674 98.1814C791.995 100.287 794.772 100.923 796.878 99.6029C798.983 98.2825 799.62 95.5052 798.299 93.3997L776.781 59.0888ZM30.2684 589.603C18.7737 554.418 11.5823 517.172 9.625 482.95C7.66344 448.654 10.9794 417.756 20.1836 395.056C29.3403 372.474 44.0072 358.588 64.8077 356.51C86.0906 354.384 115.126 364.425 153.177 393.352L158.623 386.187C119.978 356.808 88.6229 345.087 63.9132 347.555C38.721 350.071 21.7929 367.136 11.8432 391.674C1.94097 416.095 -1.36086 448.487 0.639681 483.464C2.64448 518.517 9.99505 556.528 21.7133 592.397L30.2684 589.603ZM154.814 394.136C182.49 401.018 205.304 405.33 223.787 407.333C242.212 409.33 256.605 409.066 267.311 406.601C278.049 404.128 285.701 399.269 289.437 391.62C293.105 384.109 292.409 375.071 289.218 365.527C282.859 346.503 265.499 322.269 242.487 295.502C219.341 268.581 189.996 238.565 159.068 207.916L152.733 214.309C183.636 244.933 212.765 274.738 235.662 301.369C258.692 328.156 274.941 351.206 280.683 368.38C283.543 376.936 283.52 383.226 281.35 387.67C279.247 391.975 274.55 395.698 265.291 397.83C256.002 399.97 242.754 400.336 224.756 398.385C206.816 396.441 184.428 392.226 156.986 385.402L154.814 394.136ZM159.068 207.916C135.484 184.546 125.887 149.868 127.936 116.589C129.989 83.2257 143.669 52.3284 165.278 36.3133C175.998 28.3682 188.726 24.0221 203.232 24.7675C217.792 25.5157 234.47 31.4137 252.945 44.5393C289.995 70.8625 333.557 125.759 380.434 223.38L388.547 219.484C341.427 121.357 297.051 64.8352 258.157 37.2025C238.66 23.3502 220.366 16.6361 203.694 15.7794C186.969 14.9199 172.206 19.9763 159.919 29.0826C135.513 47.1703 121.111 80.9716 118.953 116.036C116.789 151.184 126.851 188.661 152.733 214.309L159.068 207.916ZM388.619 223.222C392.331 214.66 396.24 204.549 400.412 193.822C404.598 183.059 409.066 171.625 413.94 160.273C423.726 137.478 434.974 115.446 448.448 100.172C461.85 84.9785 476.805 77.1284 494.41 80.8093C512.539 84.5995 534.836 100.82 561.991 137.675L569.237 132.337C541.743 95.0211 517.744 76.4933 496.252 71.9998C474.237 67.3969 456.246 77.7268 441.698 94.2179C427.223 110.628 415.518 133.784 405.67 156.722C400.726 168.236 396.207 179.804 392.024 190.56C387.827 201.351 383.989 211.275 380.362 219.643L388.619 223.222ZM565.614 135.006C570.096 134.601 570.096 134.601 570.096 134.601C570.096 134.6 570.096 134.6 570.095 134.598C570.095 134.596 570.095 134.591 570.094 134.584C570.093 134.57 570.091 134.548 570.088 134.517C570.083 134.457 570.075 134.364 570.065 134.239C570.044 133.99 570.014 133.615 569.978 133.124C569.904 132.14 569.805 130.689 569.701 128.839C569.493 125.139 569.269 119.851 569.206 113.526C569.081 100.853 569.605 84.1316 572.168 67.7375C574.747 51.2411 579.317 35.5846 586.955 24.6653C590.736 19.2596 595.186 15.1349 600.412 12.5698C605.606 10.0206 611.825 8.8828 619.391 9.8321L620.511 0.902111C611.37 -0.244738 603.361 1.09657 596.446 4.49063C589.564 7.86885 584.026 13.1517 579.58 19.5066C570.765 32.1085 565.928 49.3859 563.276 66.3473C560.608 83.411 560.078 100.671 560.207 113.616C560.271 120.1 560.501 125.529 560.715 129.344C560.822 131.252 560.925 132.758 561.002 133.792C561.041 134.31 561.073 134.709 561.095 134.982C561.107 135.118 561.116 135.223 561.122 135.295C561.125 135.331 561.128 135.359 561.129 135.378C561.13 135.388 561.131 135.396 561.131 135.401C561.132 135.404 561.132 135.407 561.132 135.408C561.132 135.41 561.132 135.412 565.614 135.006ZM619.391 9.8321C626.826 10.765 632.443 13.6045 636.773 17.8218C641.16 22.0947 644.443 27.9991 646.772 35.3473C651.466 50.1549 651.99 69.8514 650.747 90.8825C649.505 111.879 646.568 133.452 644.634 152.201C643.675 161.499 642.964 170.112 642.878 177.441C642.794 184.642 643.297 191.143 645.093 195.925L653.518 192.762C652.347 189.643 651.796 184.575 651.878 177.546C651.958 170.645 652.633 162.368 653.587 153.124C655.478 134.787 658.474 112.663 659.731 91.4138C660.986 70.1994 660.573 49.1015 655.352 32.628C652.723 24.3357 648.805 16.9779 643.052 11.3747C637.243 5.71591 629.783 2.06536 620.511 0.902111L619.391 9.8321ZM645.093 195.925C651.509 213.013 664.336 224.173 679.264 227.703C694.199 231.234 710.703 227.002 724.201 214.403L718.06 207.823C706.576 218.542 693.1 221.727 681.335 218.945C669.562 216.161 658.969 207.278 653.518 192.762L645.093 195.925ZM724.201 214.403C741.226 198.512 749.677 181.398 756.3 157.83C762.805 134.686 767.777 104.284 777.355 62.4848L768.583 60.4745C758.8 103.167 754.092 132.424 747.636 155.395C741.299 177.943 733.512 193.4 718.06 207.823L724.201 214.403Z"
+            fill="#0B0C5C"
+          />
+        </svg>
+        <div class="circle">
+          <div class="content">
+            <h3>المستوى الأول</h3>
+            <span>100%</span>
+          </div>
+          <div class="metrics">6,545</div>
+        </div>
+      </div>
+    </section>
+    <section class="goals">
+      <div class="details">
+        <h2>ترجمة المهارات إلى النجاح الوظيفي</h2>
+        <ul class="list">
+          <li>
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 91 101"
+                fill="none"
+              >
+                <rect
+                  x="0.34375"
+                  width="90.5396"
+                  height="101"
+                  fill="url(#pattern0)"
+                />
+                <defs>
+                  <pattern
+                    id="pattern0"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_1_604"
+                      transform="translate(-0.0167548) scale(0.0164049 0.0147059)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_1_604"
+                    width="63"
+                    height="68"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAABECAYAAAA2uu3dAAAFSElEQVR4nN2bTXbbNhCAv7jZdGVm2VXYE1TZdRflBFVPYPsEck8g3yDKCawus7JzAsknkHwCSyeQvOvOXQxGhH4IgCQIKvre0+OzTAGYATgzHAygW4Yd998ZI+AN+Nr1QFLTB16AnrledTucdOQUgh/7+2xRQW/3vr823+fJR5QIFfyu5P93nKkCfIIrZ6eAAbDmcKmX8dMrIEMs+hSYU92YqQ2458SVkCHCXQNjROC1uQ4atJsDE9PWA+IOo3qEdxUG0qMQ9KP5TmdlCSyAlbnOgE2kMWaIEvvAH6b/hWl/afpcms/G/C+IfeFVOO2khwioHamQr+aqHdYlq/l7nQidAHsycmusz8jjowraUYwKf49oNjM3PZkfPdFcwDJy0++XltrOkUn83Vx1YnXS/tYb16SNsNT1vSAxfirUEK/NGLZWOeUA5ohLUyWkju23rjS18PeIV1D05SblypsC/QsKA9E2GeKy3rEb8CyAGzOgVApYAflFos76yFJfIfHAPjPEAE0JjwQb8x6ZkdeIbeYUlrUH/IWsrBtEyDJmwCckuTFEHo1nCp8eHRW+auM5MpuXFLGA7WM12NAl7RLaRl1QHwlsBhSPgvroZ6t9+1qFJZC/D7x5yGHQoxHdE/AvRWARgxm7CtOVlCEBzQfEQ+j3WP3PgB8hYwkRvoc8h2PgG+0FPS42uFePrRx9B7jxNRoivEZ93wLu7QpbORnwOeRHqax9SjbIY+HlXIW/DLnxwtyctTqcE0WFD9LUGZEDy3Nc9sFBm868y0AsOfE82h4Z8srq4hJYn+OyD5n5DHi9wD+zP5tBDAnXM2ATYu21oa4UMKLaYxci/NbghQjXxeznFBmfKinwj0hyxMV25sEv3AJJAqaih7zb50iMPnbfvkOO+5nXJOY2wvMJt0KyoCm4okirfUE2LqqQ487dbx8LFd4nXFN3d0VYknKECLtAEhvBGxAGXb2uZ76H5AS2XCOJxTKaJDk1W/tGeY4uM+2/UW2J7xMyzjF7qbKeGWAZIYGDiwwxQsf2BzR9/bY/qBrc4VfeFFHSzuB8wjVNL6uQ2w0Diu3rWKnrByRn6GLNEePuG8DBcqmBvVPzFZntOfHCZ1uxrv4PmOAW7po4mxv2Mp8QL37Q9LiLAfCof9hvdT5390iRJ2vCEnFh/yAKjZUPHCDJVBd9SnKBumHpYsrxTYdT4IU9Q3YEZ5WIrxYm1tKPje73uTh43veTGT9wx9Gxln5sbvFnl0uXvH2Db2bv8JeUpSRHjKfPY0zxu8HjftAiC7gnJSPc0SkUCtoZ8y9HbvwNWdplS+Q/4FfgT8c9qciR+OMGt9cYmP9/9zWoZRsudPa7LhaeEPYIzvF7gi0H8e8RbvEHFW2ihYq+x0/L24MZEObSHujmsECVMvUJNWp+QoIGfVtLXVEVUsQMjljeR2hAox2kUIBdyRVCrVlXQutnUyggtGxdGVBz1hU1FiE+PUdsQBvl4kOOn9BwEaW+b0w1oxazXFzb0kxuKCGBTxBqYKpoMac4NDClqOkJ6WuAKFzL1oP9s0FXa7TV1+QEVB8xPJrEnCNC2Z85IqwKPKRe+NzaSa1YJ6B6iELsj1Z5NaGqQazMLad5/qV1wZVTOwCUTHBFfWiyOtkS9CUs+ThU412cgMoQ99vIuDWpyVki+3srxFpX3UevQ2b6eUFK1+vs50VHj4G1tRJU6Lq+Pwm2EuZIsKIHl6qgZ2FGFOf0tK1ohJ6rq4P68M/slo0vkeIBO+2UIUVRdgHxAtlKfqSldFmbwu9j1+Rfslv+tqZQiCqodf4Hs6d24XKCGYwAAAAASUVORK5CYII="
+                  />
+                </defs>
+              </svg>
+            </div>
+            <div class="text">
+              <div class="title">اكسب بينما تتعلم</div>
+              <div class="description">
+                ابدأ العمل فورًا بالمهارات التي تعلمتها واكسب المال - كل ذلك
+                أثناء مواصلة تعليمك
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 91 94"
+                fill="none"
+              >
+                <rect
+                  x="0.34375"
+                  width="90.5396"
+                  height="94"
+                  fill="url(#pattern1)"
+                />
+                <defs>
+                  <pattern
+                    id="pattern1"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_1_608"
+                      transform="translate(-0.0191099) scale(0.0159726 0.0153846)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_1_608"
+                    width="65"
+                    height="65"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAABBCAYAAACO98lFAAAEvUlEQVR4nNWc7XXiOBSGn5mz/9cdrDsYTwXrrWDpIHSQdAAdJFtBmApIByQVhKkAtoJJB8yPq4uEkY0/dAV5z/EhOLGl++pKul/KF/KgBGqgAv5yn3o/xN5dH8BPYOuuvWXnvhi+uwZmwL9AAbwgAv2PF7QpXOmuAiHqm3vPHnhz73g17HMSFMAC+AVsgHvOR3sMKuAJ2LnrLtF7k0KF3yGdrQ3bqoGVa2vBjZChwi8RMnKhxJNxl7HdE1SuAxuuOxrltfpxj8z7Wc5GL2CJ9MlcKwrgGXjnRuZiA6oVC6sGCkT4FXnn/lCUSD+fU7+4QBh+Sf1iQ6xISIRqwDOZ5lxCJCNijez9IDvCZyJCB3DSGrFwLwmRkogK2doeE7yrDTqVR/W3dg/HdoFURNTAASHCEmrTDNrR+rCXgohcJAA8DG1nQb8FZSoROUnAtfPQ5w/V4OirOlOIyE1CjfT1op2zQkzQIehLRI3sNO8I0Yfg0m3Y2hS/KJ9qwRh0EVEio33oeVl6hiUXtGGMFoSIEaHEHtzvlohGFJxOhzBOoGRY+QBrWuQsXCenOkZNIlb40W2+O7YmlMiUUSJ6LWQDUXNu/wAwJ51voETc44WJqXfXwrjGa4+Fw7YjEgFbk3YeKhFKQkzDukhQzbTShiXeHTjiQHrGVcgxJIBfTJO7xXiLmK/BjVckDJ4S2+Dn+Yjn39xn1flX4/CKDHrxh7tRI8mO1PhwjdX4gOyPAc+/4HMUFngF/tYvayRJYgHdl8NtT6dGbouxiSXwpNOhRDJDFtgD3/HZpiXeOvxm1GZf7IE/9YvFohjDnHNzWW2IWaY+hKhw9oJuRTkx43SKhFfqrboLRzdhir8wBaEdocmTXP5DiANcjwQQjQgXxpLzKbPBdpqYklDgU+1tCI2p5qg/cEqEFUxJmOOFaIOSsCPuhqumtPkeKXAAu4UxHOU2dQ7thLZ4hK4VFomfEth9RayxoqOjYxFWofQxe7fAP4hTExKhprOFTVEAH2os7bEhQc3dvkUbbUSAjelcEpCwxYbp/9znPf1JbhKhC6sFCRWBz/RExLdOgDAm8M45EV2+QzMeYbEwnvhMdUtHUiDcJZoGUBsJYQGYPmeBk5CfjpiVUTLj3GfY4Ff+HeJQaQFIqAH6PbUmaGruBBrxtUKBaEXf0PsGL7hFNvyBSMQqetMIGm5f4kd77q6KuEamJuKdyKBbT4kYhgZVUhHRaSW3JiWMMCaylIKIziTTMQKbCWPDa1OIKGmPfh8RLkjWmBJjHEtErzqm3unrBNAFcmxIfSgRGvTtlWqcmpjNiSFEDJJLdwqLpIcF+hChEatBUCvvlqtXQ1yqjxhcuKV4Ip8BlQJtROhRhFFIUgyZGU0iHkngIZtXjhtAiVjTUowxBp+RiEfiMYxJ+ExEqEtusqiHZwlucdfQ/mU5k6HH827p9Iv6PVmNPDU+FlxXKwpk/kcLsXLgmsfywjhk7uOIUWjFao7Tq6Hwa+O2RkGrUrXiLFWdchif/IWsScmEtzowrqfk7/CVcW/4E/Db9keP2ewKf2i8cs/8QHKSSRMxlqfmFXoCvkYEUgE/OBdG57VWvW3x/0LAqoItCwltiCWBY8SY4zc1wrXLfzGxlQAAAABJRU5ErkJggg=="
+                  />
+                </defs>
+              </svg>
+            </div>
+            <div class="text">
+              <div class="title">قل وداعاً لقلة المال</div>
+              <div class="description">
+                يجب أن يكون تعلم المهارات المطلوبة في سوق العمل بمتناول أي شخص
+                في أي مكان.
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 93 93"
+                fill="none"
+              >
+                <rect
+                  x="0.34375"
+                  width="92.466"
+                  height="93"
+                  fill="url(#pattern2)"
+                />
+                <defs>
+                  <pattern
+                    id="pattern2"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_1_612"
+                      transform="translate(-0.0181268) scale(0.015239 0.0151515)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_1_612"
+                    width="68"
+                    height="66"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABCCAYAAADuSnCvAAAFGklEQVR4nOWc/XEaMRDFfyVcCZRACXQQd2A6wB3YHZgOoAPSASW4hJTgEpI/xBpZSLtPxx049pthMgbdIb3bj7crEfg6WAKre0/i3lgBR+AdeDu9Xu46ozvBiDgCG2Ao3v8xWJAW/EbdPfbA401ndEdsgD/AU+PzZxJR3x4D8Epa7KIx5plEVuvzb4MFiYgt5zhRQiVjIFnZ7nS//468BWmhXtZQyTB32wLr7O/l9dO8DZakCa+dMSoZO+ru9gD8Dq4dTuPWp3/vgkfip6eQMZAy0p66uy1pp+gh+44dyUotu90UZsreQlUyLPa0sCYttoS5ai1uHbmhGlYWaqlVISNSrEcuNUvkqlvns0lhabWVSeBMhjcG4IBvGXC2gtp7ngUcgF/Bva/GjvS0vIUqYyARuxe+8w+frcPIiJ7+rFonD3oedsIY0JXqM59jh5HRUsCGFZdWNRmUoKcSBuf4E1lQOU6NNzBjnWTq05tEz0Qf0Ez5sTLOVGsEs6LJ3UVRnwph5f1UpZqPe0ZvFRyYwTpUMqIx5dhIQdbSuREUuVg+tsSKKxTs1GSAZkU1MpaV96I5lddbc2pLsp4ud5qDjFdi37caJrcCRWuUY3ML2JDalaVVrBHdr4cMVQFGGcXLTmpsGricd6SkQ1k/BxmmBVqT8gKyYlWG8h5KWeHK+jnIsPGtKtj7zp4gWqZitWR4oSHu5iSjpSbNcmr369EQpfTvaU1W65w5Aij4vu/1T9TUDJfSX2lF5LgYOxcZnppUAp3yXaVb9KTmfPwHFKndI8fzibbSmdKJP4jfkS8+ilU1XNQ5ykIPwpgcrWAWtQYhxZIxkt7SbVT55riIUYNwg1e0p2VouYJS56hBtFbs7YN719B9jVqal+NrZETxR33CtQp5zM6fWaKMSEiVaJGhbEuA5pZ2rzxGjCnvu6/pvaDVQLYFRPWHUs7XAmZPas6hZrAPvKEFp4F2z/SRVExFEV/RDK2Fj4kbagb7QGvPo0S+d1uiFvRqUDRDSxl3xwD6BRuIF1hgq1mRSoZi7q1gvCBZX8/CliOuCa1jIJnbG3VXUMmoleg9Y46M0xvdHTJvM8caLC/U07BKBlynjHv6qaBvVVRRI8R89Uh7sT0pWumWt1Jwb/ZTLNGFxYYtaeLvxN2knmJKUb3e5la5a+dhTP1VxYJkFWtihdpTTCnNGi8llrt2HiYjowc9xZRKRmtMj6vchQzQK2D1dIBXM6mu0rNRNilU892RiFPI8HojqlD0AqhaoHbDAq/3BWa20WZ3lKpVV7HAXnNfOxr6lxkO6ikTVFuNim5RXMUeUK2afiARYa/JD8xExZQ3uRyKjFb2YszdvO2N42mMicrJEB06eQ0mZ6j1NEqYGPTcMurLGuw8WnfJH6F20A3SwixeTKFbIrdU+rKGMRWxhNpBNzsP+o6mRdQNLu9J9m6F9HbgZZjPbzifOTeJr6QztcDyCjcvk7TupSrbUViSCLCNYTWvq0/VKxCNDLV8n+0Y1bVQZbQXW5QgXKIV7+6OHjJqrjBmJ27DF/2pmtL38Cyo95RBfs2XcxWlsx250xjd0NMvuRlUee+RYZmsB7NnlbF4wp/YA752GWP2irK9G/bU/d5+l9vq2BvUfSHDl40bhidS/FieXhb1VUXb80Of0dsLt8aW88/Xt/T9kkl92mOy0H8JhRDvoN63wxa/DWg9kB/zv0nU1OnAOZNEPdpvCatfLA4pG2Y/AisSOTexiH9t8ORhlxkGCwAAAABJRU5ErkJggg=="
+                  />
+                </defs>
+              </svg>
+            </div>
+            <div class="text">
+              <div class="title">مسارات مخصصة لك</div>
+              <div class="description">
+                ابحث عن مسار وظيفي ستحبه مصمم خصيصًا لك ولصالح اهتماماتك
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <img src="./assets/images/cards.png" alt="cards" />
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-wrapper">
+          <div class="footer-logo">
+            <img src="./assets/images/logo-white.png" alt="Logo image" />
+            <div class="contact">
+              <div class="phone flex-row">
+                <img src="./assets/images/phone.png" alt="phone" />
+                <p>(08)203 3427</p>
+              </div>
+              <div class="email flex-row">
+                <img src="./assets/images/email.png" alt="email" />
+                <p>hello@golancer.net</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h3>غرضنا</h3>
+            <ul>
+              <li>&middot; أحلامك</li>
+              <li>&middot; مهاراتك</li>
+              <li>&middot; طريقك</li>
+              <li>
+                نحن نبني المسار الأكثر تخصيصًا للعثور على عمل مُرضٍ حتى تتمكن من
+                إنشاء مستقبل أفضل لك وللعالم من حولك
+              </li>
+            </ul>
+            <div class="subscribe">
+              <input type="email" placeholder="أدخل بريدك الإلكتروني" />
+              <button>ارسال</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-banner copyrights bg-gray">
+      جميع الحقوق محفوظة لدى منصة قولانسر &copy;
+      <div id="year"></div>
     </div>
   </body>
 </html>
